@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+ 
+header {
+  background-color: #3796c9;
+  color: white;
+  height: 60px;
+  padding: 24px;
+  font-family: 'Segoe UI semibold';
+  font-size: 50px;
+}
+ 
+h1 {
+  margin-left: 10px;
+}
+.topnav {
+  height: 40px;
+  overflow: hidden;
+  background-color: black;
+  font-family: 'Segoe UI semibold';
+}
+ 
+.img {
+  float: right;
+  padding: 15px;
+}
+.topnav ul {
+  display: flex;
+  padding-left: 5px;
+  color: white;
+}
+ 
+.topnav li {
+  list-style-type: none;
+ 
+  justify-content: center;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-left: 24px;
+}
+.topnav a {
+  text-decoration: none;
+  color: white;
+}
+ 
+form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px 24px;
+}
+.input-field {
+  width: 100%;
+  height: 30px;
+ 
+   
+ 
+}
+label {
+  font-family: 'Segoe UI semibold';
+}
+.details-item:hover {
+   background-color:#CEE6F1;
+ 
+}
+ 
+#detailsList {
+ 
+  width: 300px;
+ 
+ 
+  border: 1px solid #cccccc;
+  margin-left: 20px;
+ 
+}
+.styling {
+  padding-left: 20px;
+}
+h3 {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+ 
+.rightsidedetails {
+  width: 70%;
+  float: right;
+}
+ 
+#addButton {
+  background-color: rgb(23, 135, 23);
+    width: 101px;
+    height: 30px;
+    float: right;
+    color: white;
+    border:none;
+}
+textarea {
+  width: 90%;
+  height: 40px;
+}
+
+.container {
+  height: 10px;
+ 
+}
+.col {
+  float: left;
+ 
+  padding: 5px;
+}
+ 
+ .email-details{
+  margin-bottom: 10px;
+ }
+ .details-item {
+  border: 1px solid #cccccc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+   
+}
+ 
+.d-none {
+  display: none;
+}
+#updateButton{
+  background-color: rgb(23, 135, 23);
+    width: 105px;
+    height: 30px;
+    float: right;
+    color: white;
+    border:none;
+}
+.email-details{
+  margin-bottom: 24px;
+}
+
+.close-icon {
+ 
+  float: right;
+  
+}
+
+
+textarea {
+  width: 100%;
+  height: 150px;
+ 
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+ 
+  font-size: 16px;
+  resize: none;
+}
+.errormsg{
+  color:red;
+}
+.required {
+  color: red;}
+ 
+.item{
+  font-weight: bold;
+}
+.detailslist{
+  font-family: serif;
+   
+    padding-left: 12px;
+   
+}
+.name{
+font-size: 40px;
+
+padding-left: 12px;
+}
+.editicon{
+  padding-left: 20px;
+  margin-left: 20px;
+  height:120px;
+}
+.deleteicon{
+  padding-left: 20px;
+    margin-left: 20px;
+}
+.row {
+  display: flex;
+  width: 100%;
+}
+ 
+.column {
+ 
+  margin-right: 10px;
+}
+.d-nones{
+  display: block;
+}
+.input-field {
+  width: 100%;
+}
+#successMessage{
+  color:green;
+}
+.name-details{
+  font-size:40px;
+  font-family:'Segoe UI semibold';
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+#detailsList:last-child {
+  border-bottom: none;
+}
+.address-details{
+  margin-bottom: 24px;
+}
+.land-details{
+  margin-bottom: 24px;
+}
+.details{
+  padding-left: 12px;
+ 
+}
+.dialog {
+  border: none;
+
+width:70%;
+  
+ }
+ #editbutton{
+  height:20px;
+ }

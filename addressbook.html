@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="addressbook.css" />
+    <title>Health on us</title>
+  </head>
+  <body>
+    <div class="main">
+      <header>Address Book</header>
+      <div class="topnav">
+        <img src="blog-icon.png" class="img" />
+        <ul>
+         
+          <li><a href="#" id="home-link">HOME</a></li>
+          <li><a href="#" onclick="showForm()">+ADD</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="leftsidedetails ">
+          <h3>Contacts</h3>
+ 
+          <div id="detailsList"></div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="rightsidedetails d-none">
+      <div class="row">
+        <div class="col">
+      <div id="userdetails"></div>
+      </div>
+        <div class="col">
+      <div class="d-none edit-details-buttons">
+        <span class="editicon">
+          <img src="edit1.jpg" id="editbutton" />
+           EDIT
+        </span>
+       
+        <span id="delete-button" class="deleteicon">
+          <img src="delete1.png" />
+          DELETE</span>
+      </div>
+      </div>
+      </div>
+      <dialog id="addDialog" class="dialog">
+      <form id="formElement">
+      <span class="close-icon" onclick="closeDialog()">&#x2716;</span>
+        <div id="errorMessage"></div>
+        <div>
+          <label> Name</label>
+        </div>
+        <div>
+          <input id="myname" class="input-field" type="text" oninput="clearNameError()" />
+         
+          <span id="nameerror" class="errormsg"> </span>
+        </div>
+        <div>
+          <label> Email</label>
+        </div>
+        <div>
+          <input class="input-field" type="text" id="email" oninput="clearEmailError()" />
+ 
+          <span id="emailerror" class="errormsg"></span>
+        </div>
+ 
+        <div class="row">
+          <div class="column">
+          <label>Mobile</label>
+         
+          <input class="input-field" id="mobile" type="text" oninput="clearMobileError()" />
+     
+          <span id="mobileerror" class="errormsg"> </span>
+          </div>
+          <div class="column">
+          <label>Landline</label>
+         
+          <input class="input-field" id="telnumber" type="text" oninput="cleartelnumError()" />
+          <span id="landlineerror" class="errormsg"> </span>
+        </div>
+        </div>
+ 
+ 
+ 
+        <div>
+          <label> Website</label>
+        </div>
+ 
+ 
+        <div>
+          <input class="input-field" id="site" type="text" oninput="clearSiteError()" />
+          <span id="siteerror" class="errormsg"></span>
+ 
+         
+        </div>
+        <div>
+          <label>Address</label>
+        </div>
+        <div>
+          <textarea id="address" oninput="clearAddressError()" ></textarea>
+          <span id="addresserror" class="errormsg"></span>
+        </div>
+        <div class="button-container">
+          <button type="button" id="addButton" onclick="validationForm();" class="btn-style">Add</button>
+          <button type="button" id="updateButton" onclick="validationForm();" class="btn-style">
+            Update
+          </button>
+     
+          <div id="successMessage"></div>
+        </div>
+      </form>
+    </div>
+  </dialog>
+    </div>
+   
+   
+   
+    <script src="addressbook.js"></script>
+    <script src="model.js"></script>
+  </body>
+</html>
+ 
